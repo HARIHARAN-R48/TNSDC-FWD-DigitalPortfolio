@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 40px 20px;
+  text-align: center;
+}
+header img.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid #00e6e6;
+  box-shadow: 0 0 25px rgba(0, 230, 230, 0.9);
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+header img.avatar:hover {
+  transform: scale(1.1);
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin: 10px 0 5px;
+}
+header h2 {
+  font-size: 1.2rem;
+  color: #cccccc;
+}
+
+/* Sections */
+section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(0, 230, 230, 0.2);
+}
+section h3 {
+  color: #00e6e6;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(0, 230, 230, 0.7);
+}
+section p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Skills */
+.skill {
+  margin: 15px 0;
+}
+.skill-name {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+.skill-bar {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.skill-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00e6e6, #00b3b3);
+  border-radius: 10px;
+  transition: width 2s ease-in-out;
+  box-shadow: 0 0 10px rgba(0,230,230,0.7);
+}
+
+/* Projects */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin-bottom: 10px;
+}
+ul li strong {
+  color: #00e6e6;
+}
+
+/* Calculator */
+.calculator {
+  margin-top: 20px;
+  background: rgba(255,255,255,0.08);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 230, 230, 0.3);
+}
+.calc-display {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  text-align: right;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: #00e6e6;
+  box-shadow: inset 0 0 10px rgba(0,230,230,0.4);
+}
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.calc-buttons button {
+  padding: 15px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #00e6e6;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 0 10px rgba(0,230,230,0.5);
+}
+.calc-buttons button:hover {
+  background: #00b3b3;
+  transform: scale(1.05);
+}
+
+/* Contact */
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  background: #111;
+  color: white;
+  box-shadow: inset 0 0 10px rgba(0,230,230,0.4);
+}
+button {
+  background: #00e6e6;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 0 10px rgba(0,230,230,0.6);
+}
+button:hover {
+  background: #00b3b3;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
