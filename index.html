@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hariharan R - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="https://static.vecteezy.com/system/resources/previews/011/483/813/non_2x/guy-anime-avatar-free-vector.jpg" 
+         alt="Avatar" class="avatar">
+    <h1>Hariharan R</h1>
+    <h2>Computer Science Student • Web Development Enthusiast</h2>
+  </header>
+
+  <section>
+    <h3>About Me</h3>
+    <p>Hello 👋 I'm Hariharan, a Computer Science student passionate about building 
+    modern, accessible web experiences and learning new technologies in web development.</p>
+    <p>I enjoy experimenting with HTML, CSS, and JavaScript to bring ideas to life and 
+    create projects that solve real-world problems. My curiosity drives me to 
+    constantly learn, whether it’s exploring new frameworks, improving my coding 
+    practices, or designing clean user interfaces.</p>
+    <p>Outside of coding, I love keeping up with the latest tech trends and exploring 
+    creative hobbies that keep me inspired. My goal is to grow into a full-stack 
+    developer and contribute to impactful projects that make technology accessible 
+    to everyone.</p>
+  </section>
+
+  <section>
+    <h3>Skills</h3>
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar"><div class="skill-fill" data-level="90%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">C++</div>
+      <div class="skill-bar"><div class="skill-fill" data-level="80%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar"><div class="skill-fill" data-level="85%"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">HTML & CSS</div>
+      <div class="skill-bar"><div class="skill-fill" data-level="95%"></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Projects</h3>
+    <ul>
+      <li><strong>Portfolio Website</strong> — This site showcasing my work.</li>
+      <li><strong>Calculator</strong> — A simple calculator built with HTML, CSS, and JavaScript (try it below 👇).</li>
+    </ul>
+    <!-- Embedded Calculator -->
+    <div class="calculator">
+      <input type="text" id="calcDisplay" class="calc-display" disabled>
+      <div class="calc-buttons">
+        <button onclick="appendCalc('7')">7</button>
+        <button onclick="appendCalc('8')">8</button>
+        <button onclick="appendCalc('9')">9</button>
+        <button onclick="appendCalc('/')">÷</button>
+        <button onclick="appendCalc('4')">4</button>
+        <button onclick="appendCalc('5')">5</button>
+        <button onclick="appendCalc('6')">6</button>
+        <button onclick="appendCalc('*')">×</button>
+        <button onclick="appendCalc('1')">1</button>
+        <button onclick="appendCalc('2')">2</button>
+        <button onclick="appendCalc('3')">3</button>
+        <button onclick="appendCalc('-')">−</button>
+        <button onclick="appendCalc('0')">0</button>
+        <button onclick="appendCalc('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="appendCalc('+')">+</button>
+        <button onclick="clearCalc()" style="grid-column: span 4; background:#ff7b7b; color:white;">C</button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Contact Me</h3>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Hariharan R — Built with 💡</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
